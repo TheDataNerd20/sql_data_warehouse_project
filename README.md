@@ -67,20 +67,28 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
-
-#### **Objective**
-
-Develop SQL-based analytics to deliver detailed insights into:
-
-- Customer Behavior  
-- Product Performance  
-- Sales Trends  
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
-For more details, refer to `docs/requirements.md`. :contentReference[oaicite:7]{index=7}
-
----
-
 ## 📂 Repository Structure
 
+data-warehouse-project/
+│
+├── datasets/ # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/ # Project documentation and architecture details
+│ ├── etl.drawio
+│ ├── data_architecture.drawio
+│ ├── data_catalog.md
+│ ├── data_flow.drawio
+│ ├── data_models.drawio
+│ ├── naming-conventions.md
+│
+├── scripts/ # SQL scripts for ETL and transformations
+│ ├── bronze/ # Scripts for extracting and loading raw data
+│ ├── silver/ # Scripts for cleaning and transforming data
+│ ├── gold/ # Scripts for creating analytical models
+│
+├── tests/ # Test scripts and quality files
+│
+├── README.md # Project overview and instructions
+├── LICENSE # License information for the repository
+├── .gitignore # Files and directories to be ignored by Git
+└── requirements.txt # Dependencies and requirements for the project
